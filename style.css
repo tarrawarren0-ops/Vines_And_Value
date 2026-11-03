@@ -171,3 +171,79 @@ footer p { font-size: 13px; letter-spacing: .04em; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
 }
+
+/* Food Resources page */
+.resources-intro {
+  background: linear-gradient(115deg, #e5ecde, #f5f5ec);
+  border-left: 4px solid var(--forest);
+  margin: 34px auto 26px;
+  max-width: 1064px;
+  padding: clamp(25px, 4vw, 42px);
+}
+.resources-intro h2, .resource-section-title, .resource-callout h2 {
+  color: var(--forest);
+  font-family: 'Playfair Display', Georgia, serif;
+}
+.resources-intro h2 { font-size: clamp(27px, 3vw, 35px); margin-bottom: 12px; }
+.resources-intro p { color: #536057; margin-top: 10px; }
+.resource-section-title {
+  font-size: clamp(25px, 3vw, 32px);
+  margin: 42px auto 18px;
+  max-width: 1064px;
+  padding: 0 28px;
+}
+.resource-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0 auto 34px;
+  max-width: 1064px;
+  padding: 0 28px;
+}
+.resource-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-top: 3px solid #8ba486;
+  box-shadow: 0 8px 24px rgba(28, 57, 39, .06);
+  padding: 25px;
+}
+.resource-card h3 {
+  color: var(--forest);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 23px;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+.resource-card p { color: #536057; }
+.resource-card .details {
+  background: var(--sage-light);
+  color: #46584b;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 17px 0;
+  padding: 15px;
+}
+.resource-card a, .resource-links a {
+  color: var(--forest);
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+.resource-card a:hover, .resource-links a:hover { color: var(--forest-deep); }
+.resource-callout {
+  background: var(--sage);
+  margin: 0 auto 34px;
+  max-width: 1008px;
+  padding: clamp(25px, 4vw, 40px);
+}
+.resource-callout h2 { font-size: 27px; margin-bottom: 12px; }
+.resource-callout p { color: #4f5e52; margin: 9px 0; }
+.resource-links { padding-left: 22px; }
+.resource-links li { line-height: 1.65; margin: 10px 0; }
+.resource-note { color: var(--muted); font-size: 13px; margin-top: 18px; }
+@media (max-width: 760px) {
+  .resources-intro { margin: 24px 20px; }
+  .resource-section-title { padding: 0 23px; }
+  .resource-grid { grid-template-columns: 1fr; padding: 0 23px; }
+  .resource-card { padding: 21px; }
+  .resource-callout { margin: 0 20px 28px; }
+}
