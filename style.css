@@ -507,3 +507,20 @@ footer p { font-size: 13px; letter-spacing: .04em; }
   .festival-experience { padding: 48px 23px; }
   .festival-voices { margin: 50px auto; padding: 0 23px; }
 }
+
+
+/* Fresh for Less event details */
+.festival-details { margin: 0 auto; max-width: 1100px; padding: 58px 30px 65px; }
+.festival-details-grid { display: grid; gap: 1px; grid-template-columns: repeat(4, 1fr); margin-top: 28px; }
+.festival-details-grid article { background: #eef2e9; min-height: 132px; padding: 24px 20px; }
+.festival-details-grid article > span { color: #71856c; display: block; font-size: 11px; font-weight: 700; letter-spacing: .12em; margin-bottom: 10px; text-transform: uppercase; }
+.festival-details-grid article strong { color: var(--forest-deep); display: block; font-family: 'Playfair Display', Georgia, serif; font-size: 20px; font-weight: 500; line-height: 1.25; }
+.festival-details-grid article p, .festival-details-note { color: #536057; font-size: 13px; margin: 8px 0 0; }
+.festival-details-note { margin-top: 18px; }
+.festival-speakers { background: #f7f6ef; padding: 62px max(7vw, 28px); }
+.festival-speakers .festival-section-heading, .festival-speakers .festival-activities { max-width: 1100px; }
+@media (max-width: 760px) {
+  .festival-details { padding: 45px 23px; }
+  .festival-details-grid { grid-template-columns: 1fr 1fr; }
+  .festival-speakers { padding: 48px 23px; }
+}
