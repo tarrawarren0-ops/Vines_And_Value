@@ -247,3 +247,169 @@ footer p { font-size: 13px; letter-spacing: .04em; }
   .resource-card { padding: 21px; }
   .resource-callout { margin: 0 20px 28px; }
 }
+
+/* Food Resources page — editorial layout */
+.food-page { background: var(--cream); }
+.food-hero {
+  align-items: center;
+  background: var(--sage-light);
+  display: grid;
+  gap: clamp(32px, 6vw, 80px);
+  grid-template-columns: .9fr 1.1fr;
+  padding: clamp(54px, 7vw, 92px) max(7vw, 28px);
+}
+.food-hero-copy { max-width: 540px; }
+.eyebrow {
+  color: #71856e;
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  margin-bottom: 13px;
+  text-transform: uppercase;
+}
+.food-hero h2, .food-intro-strip h2, .section-heading h2,
+.transport-copy h2, .produce-copy h2, .sources-panel h2 {
+  color: var(--forest-deep);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -.025em;
+  line-height: 1.12;
+}
+.food-hero h2 { font-size: clamp(40px, 5vw, 62px); margin-bottom: 18px; }
+.food-hero-copy > p { color: #536257; font-size: 17px; max-width: 470px; }
+.food-hero-photo { position: relative; }
+.food-hero-photo img {
+  border-radius: 3px 80px 3px 3px;
+  box-shadow: var(--shadow);
+  height: clamp(300px, 36vw, 450px);
+  object-fit: cover;
+  width: 100%;
+}
+.food-hero-photo span {
+  background: var(--forest);
+  bottom: -17px;
+  color: white;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 17px;
+  padding: 12px 20px;
+  position: absolute;
+  right: 0;
+}
+.food-intro-strip {
+  align-items: center;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: .8fr 1.2fr;
+  margin: 0 auto;
+  max-width: 1160px;
+  padding: 58px 30px 48px;
+}
+.food-intro-strip h2 { font-size: clamp(29px, 3vw, 39px); }
+.food-intro-strip p { color: #536057; }
+.food-intro-strip .resource-note { font-size: 13px; margin-top: 9px; }
+.resource-jump {
+  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 34px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1160px;
+  padding: 17px 25px;
+}
+.resource-jump a {
+  color: var(--forest);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.resource-jump a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.food-section { margin: 0 auto; max-width: 1220px; padding: 64px 30px 26px; scroll-margin-top: 20px; }
+.section-heading {
+  align-items: end;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+.section-heading h2 { font-size: clamp(30px, 3.5vw, 42px); }
+.section-heading > p { color: var(--muted); max-width: 330px; font-size: 14px; }
+.food-section .resource-grid { max-width: none; padding: 0; gap: 17px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.resource-card { border-top: 3px solid #91a88a; border-radius: 3px; padding: 27px 29px; position: relative; }
+.resource-card h3 { font-size: 25px; }
+.resource-card .card-number { color: #8ca187; font-size: 11px; font-weight: 700; letter-spacing: .12em; }
+.resource-card .details { margin: 16px 0; }
+.resource-card-feature { background: #eef2e9; }
+.transport-section {
+  align-items: center;
+  background: #e8eee3;
+  display: grid;
+  gap: clamp(32px, 6vw, 72px);
+  grid-template-columns: .95fr 1.05fr;
+  margin: 60px auto;
+  max-width: 1160px;
+  padding: clamp(28px, 4vw, 48px);
+  scroll-margin-top: 20px;
+}
+.transport-photo img { height: 100%; max-height: 440px; min-height: 320px; object-fit: cover; width: 100%; }
+.transport-copy h2, .produce-copy h2 { font-size: clamp(32px, 3.5vw, 43px); margin-bottom: 17px; }
+.transport-copy > p, .produce-copy p { color: #536057; margin-bottom: 14px; }
+.transport-contact { border-left: 3px solid #8ca187; margin: 22px 0; padding: 4px 0 4px 18px; }
+.transport-contact span { color: var(--muted); display: block; font-size: 11px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.transport-contact strong { color: var(--forest); display: block; font-family: 'Playfair Display', Georgia, serif; font-size: 28px; }
+.transport-contact p { color: #536057; font-size: 13px; margin-top: 4px; }
+.transport-copy > a, .produce-copy > a { color: var(--forest); display: inline-block; font-size: 14px; font-weight: 700; margin: 7px 18px 0 0; text-underline-offset: 4px; }
+.snap-section { padding-top: 25px; }
+.snap-grid { display: grid; gap: 18px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.snap-card { align-items: flex-start; background: var(--white); border: 1px solid var(--line); display: flex; gap: 20px; padding: 28px; }
+.snap-icon { align-items: center; background: var(--sage); border-radius: 50%; color: var(--forest); display: flex; flex: 0 0 43px; font-family: 'Playfair Display', Georgia, serif; height: 43px; justify-content: center; }
+.snap-card h3 { color: var(--forest); font-family: 'Playfair Display', Georgia, serif; font-size: 23px; margin-bottom: 8px; }
+.snap-card p { color: #536057; font-size: 14px; margin-bottom: 12px; }
+.snap-card a { color: var(--forest); font-size: 13px; font-weight: 700; }
+.produce-section {
+  align-items: center;
+  background: var(--sage-light);
+  display: grid;
+  gap: clamp(32px, 6vw, 70px);
+  grid-template-columns: 1.1fr .9fr;
+  margin: 60px auto;
+  max-width: 1160px;
+  padding: clamp(30px, 5vw, 58px);
+  scroll-margin-top: 20px;
+}
+.produce-section img { border-radius: 3px 65px 3px 3px; box-shadow: var(--shadow); height: 360px; object-fit: cover; width: 100%; }
+.sources-panel {
+  align-items: start;
+  background: #fffefa;
+  border: 1px solid var(--line);
+  display: grid;
+  gap: 30px 55px;
+  grid-template-columns: .9fr 1.1fr;
+  margin: 0 auto 65px;
+  max-width: 1160px;
+  padding: 40px;
+}
+.sources-panel h2 { font-size: 31px; margin-bottom: 12px; }
+.sources-panel > div > p { color: var(--muted); font-size: 14px; }
+.sources-panel .resource-links { columns: 2; column-gap: 30px; font-size: 13px; list-style: none; padding: 0; }
+.sources-panel .resource-links li { break-inside: avoid; margin: 0 0 12px; }
+.sources-panel .resource-note { grid-column: 1 / -1; margin: 0; }
+@media (max-width: 760px) {
+  .food-hero, .food-intro-strip, .transport-section, .produce-section, .sources-panel { grid-template-columns: 1fr; }
+  .food-hero { padding: 48px 23px 60px; }
+  .food-hero-photo img { height: 280px; }
+  .food-intro-strip { gap: 15px; padding: 45px 23px 35px; }
+  .resource-jump { justify-content: flex-start; gap: 9px 20px; padding: 15px 23px; }
+  .food-section { padding: 48px 23px 15px; }
+  .section-heading { align-items: flex-start; flex-direction: column; gap: 8px; }
+  .food-section .resource-grid, .snap-grid { grid-template-columns: 1fr; }
+  .transport-section, .produce-section { margin: 38px 18px; padding: 24px; }
+  .transport-photo img { min-height: 230px; }
+  .produce-section img { height: 260px; }
+  .snap-card { padding: 22px; }
+  .sources-panel { margin: 0 18px 40px; padding: 26px 22px; }
+  .sources-panel .resource-links { columns: 1; }
+  .sources-panel .resource-note { grid-column: auto; }
+}
